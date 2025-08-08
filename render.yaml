@@ -6,4 +6,4 @@ services:
     startCommand: cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: OPENROUTER_API_KEY
-        value: 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
+        value: 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
