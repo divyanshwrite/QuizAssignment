@@ -4,17 +4,42 @@ FastAPI server for processing documents and generating quizzes.
 
 ## Setup
 
+1. Install dependencies:
 ```bash
 pip install -r requirements.txt
+```
+
+2. Set up environment variables:
+```bash
+# Copy the example environment file
+cp .env.example .env
+
+# Edit .env with your actual API key
+# Get your API key from https://openrouter.ai/
+```
+
+3. Run the server:
+```bash
 python main.py
 ```
 
-## Environment
+## Environment Variables
 
-Create `.env` file:
-```
-OPENROUTER_API_KEY=your_key_here
-```
+⚠️ **SECURITY WARNING**: Never commit your `.env` file or expose your API keys in code!
+
+Required environment variables:
+- `OPENROUTER_API_KEY`: Your OpenRouter API key (get from https://openrouter.ai/)
+
+## Deployment Security
+
+When deploying to platforms like Render, Railway, or Heroku:
+
+1. **DO NOT** include your `.env` file in the repository
+2. Set environment variables directly in your hosting platform:
+   - **Render**: Go to Environment tab in your service settings
+   - **Railway**: Use the Variables tab in your project
+   - **Hercel**: Set environment variables in the dashboard
+3. The `.env` file is only for local development
 
 ## Endpoints
 

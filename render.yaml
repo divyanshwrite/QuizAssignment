@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: quiz-app-backend
+    env: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: OPENROUTER_API_KEY
+        value: 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

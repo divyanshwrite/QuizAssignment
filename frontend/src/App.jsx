@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
+import { API_BASE_URL } from './config.js';
 
 function App() {
   const [file, setFile] = useState(null);
@@ -82,7 +83,7 @@ function App() {
       setIsSubmitting(true);
       setError('');
       
-      const response = await fetch('http://localhost:8000/api/generate-quiz', {
+      const response = await fetch(`${API_BASE_URL}/api/generate-quiz`, {
         method: 'POST',
         body: formData,
         mode: 'cors',
@@ -249,7 +250,7 @@ function App() {
 
   const fetchSavedQuizzes = async () => {
     try {
-      const response = await fetch('http://localhost:8000/api/saved-quizzes');
+      const response = await fetch(`${API_BASE_URL}/api/saved-quizzes`);
       const data = await response.json();
       setSavedQuizzes(data.saved_quizzes || []);
     } catch (err) {
@@ -259,7 +260,7 @@ function App() {
 
   const exportQuizAsMarkdown = async (filename) => {
     try {
-      const response = await fetch(`http://localhost:8000/api/quiz/${filename}/markdown`);
+      const response = await fetch(`${API_BASE_URL}/api/quiz/${filename}/markdown`);
       if (!response.ok) {
         throw new Error('Failed to export quiz');
       }
@@ -289,7 +290,7 @@ function App() {
 
   const loadSavedQuiz = async (filename) => {
     try {
-      const response = await fetch(`http://localhost:8000/api/quiz/${filename}`);
+      const response = await fetch(`${API_BASE_URL}/api/quiz/${filename}`);
       const data = await response.json();
       
       // Convert the saved quiz format to the format expected by the frontend
@@ -338,7 +339,7 @@ function App() {
       setIsSubmitting(true);
       setError('');
       
-      const response = await fetch('http://localhost:8000/api/generate-quiz/markdown', {
+      const response = await fetch(`${API_BASE_URL}/api/generate-quiz/markdown`, {
         method: 'POST',
         body: formData,
         mode: 'cors',
@@ -428,7 +429,7 @@ function App() {
 
   const fetchLeaderboard = async () => {
     try {
-      const response = await fetch('http://localhost:8000/api/leaderboard');
+      const response = await fetch(`${API_BASE_URL}/api/leaderboard`);
       const data = await response.json();
       setLeaderboard(data.leaderboard || []);
     } catch (err) {
@@ -456,7 +457,7 @@ function App() {
     }
     
     try {
-      const response = await fetch('http://localhost:8000/api/leaderboard', {
+      const response = await fetch(`${API_BASE_URL}/api/leaderboard`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

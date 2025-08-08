@@ -27,7 +27,15 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:5174", "http://localhost:5175", "http://127.0.0.1:5173", "http://127.0.0.1:5174", "http://127.0.0.1:5175"],
+    allow_origins=[
+        "http://localhost:5173", 
+        "http://localhost:5174", 
+        "http://localhost:5175", 
+        "http://127.0.0.1:5173", 
+        "http://127.0.0.1:5174", 
+        "http://127.0.0.1:5175",
+        "https://quiz-app-ten-phi-14.vercel.app"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -54,10 +62,12 @@ class LeaderboardEntry(BaseModel):
     quiz_topic: str
     completion_date: str
 
-OPENROUTER_API_KEY = "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"
+# Load API key from environment variables
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 if not OPENROUTER_API_KEY:
     logger.error("OPENROUTER_API_KEY not found in environment variables")
+    raise ValueError("OPENROUTER_API_KEY environment variable is required")
 
 def save_quiz_to_file(questions: List[QuizQuestion], filename: str = None) -> str:
     try:
