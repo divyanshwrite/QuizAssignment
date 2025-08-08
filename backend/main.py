@@ -54,10 +54,11 @@ class LeaderboardEntry(BaseModel):
     quiz_topic: str
     completion_date: str
 
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 if not OPENROUTER_API_KEY:
     logger.error("OPENROUTER_API_KEY not found in environment variables")
+    raise ValueError("OPENROUTER_API_KEY environment variable is required")
 
 def save_quiz_to_file(questions: List[QuizQuestion], filename: str = None) -> str:
     try:
