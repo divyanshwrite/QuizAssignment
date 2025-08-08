@@ -1,0 +1,29 @@
+[
+  {
+    "player_name": "Random",
+    "score": 4,
+    "total_questions": 6,
+    "percentage": 66.7,
+    "time_taken": 19,
+    "quiz_topic": "Personal Information, Projects, Technologies, Education, Professional Experience, Certifications",
+    "completion_date": "2025-08-08T06:06:41.774Z"
+  },
+  {
+    "player_name": "Divyansh Singh",
+    "score": 4,
+    "total_questions": 6,
+    "percentage": 66.7,
+    "time_taken": 32,
+    "quiz_topic": "Authentication, Deployment, Usage, Performance, Projects",
+    "completion_date": "2025-08-07T15:40:54.087Z"
+  },
+  {
+    "player_name": "DIB",
+    "score": 4,
+    "total_questions": 6,
+    "percentage": 66.7,
+    "time_taken": 38,
+    "quiz_topic": "Professional Experience, Work Achievement, Project Technologies, Project Performance, Achievements, Certifications",
+    "completion_date": "2025-08-08T05:55:00.877Z"
+  }
+]

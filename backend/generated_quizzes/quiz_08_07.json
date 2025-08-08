@@ -1,0 +1,84 @@
+{
+  "generated_at": "2025-08-07T23:50:09.965986",
+  "total_questions": 6,
+  "questions": [
+    {
+      "question": "What is the full name of the person in this document?",
+      "options": [
+        "Divyansh Singh Parihar",
+        "Divyansh Parihar",
+        "Singh Parihar",
+        "Divyansh"
+      ],
+      "answer": "Divyansh Singh Parihar",
+      "type": "multiple-choice",
+      "level": "Beginner",
+      "topic": "Personal Information"
+    },
+    {
+      "question": "Did Divyansh achieve more than 90% classification accuracy in his Malware Detector project?",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True",
+      "type": "true-false",
+      "level": "Intermediate",
+      "topic": "Projects"
+    },
+    {
+      "question": "Match the project with its primary technology stack",
+      "options": [
+        "AI Presentation Generator",
+        "Obfuscated Malware Detector",
+        "StudyPal",
+        "React",
+        "Python",
+        "WebRTC"
+      ],
+      "answer": "AI Presentation Generator-AI Presentation Generator-React,Obfuscated Malware Detector-Obfuscated Malware Detector-Python,StudyPal-StudyPal-WebRTC",
+      "type": "matching",
+      "level": "Advanced",
+      "topic": "Technologies"
+    },
+    {
+      "question": "Is Divyansh currently pursuing a B.Tech in Computer Science Engineering?",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True",
+      "type": "true-false",
+      "level": "Beginner",
+      "topic": "Education"
+    },
+    {
+      "question": "Which company did Divyansh work at as a Full Stack Developer?",
+      "options": [
+        "Religare Housing Development Finance Corporation Ltd",
+        "Google",
+        "Microsoft",
+        "Amazon"
+      ],
+      "answer": "Religare Housing Development Finance Corporation Ltd",
+      "type": "multiple-choice",
+      "level": "Intermediate",
+      "topic": "Professional Experience"
+    },
+    {
+      "question": "Match the certificate with its issuing organization",
+      "options": [
+        "Full Stack Web Development",
+        "Digital Marketing Fundamentals",
+        "Data Structures & Algorithms",
+        "BitDegree",
+        "Google",
+        "LetsUpgrade"
+      ],
+      "answer": "Full Stack Web Development-Full Stack Web Development-BitDegree,Digital Marketing Fundamentals-Digital Marketing Fundamentals-Google,Data Structures & Algorithms-Data Structures & Algorithms-LetsUpgrade",
+      "type": "matching",
+      "level": "Advanced",
+      "topic": "Certifications"
+    }
+  ]
+}

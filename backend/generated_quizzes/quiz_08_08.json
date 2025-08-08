@@ -1,0 +1,86 @@
+{
+  "generated_at": "2025-08-08T11:38:03.402463",
+  "total_questions": 6,
+  "questions": [
+    {
+      "question": "What is the full name of the professional in this document?",
+      "options": [
+        "Divyansh Singh Parihar",
+        "Divyansh Parihar",
+        "Singh Parihar",
+        "Divyansh"
+      ],
+      "answer": "Divyansh Singh Parihar",
+      "type": "multiple-choice",
+      "level": "Beginner",
+      "topic": "Personal Information"
+    },
+    {
+      "question": "Did Divyansh Singh Parihar win the Chancellor's Gold Medal?",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True",
+      "type": "true-false",
+      "level": "Intermediate",
+      "topic": "Awards"
+    },
+    {
+      "question": "Match the project with its primary technology stack",
+      "options": [
+        "AI Presentation Generator",
+        "Obfuscated Malware Detector",
+        "StudyPal",
+        "AI Code Documentation Assistant",
+        "React, Node.js, MongoDB",
+        "Python, XGBoost",
+        "WebRTC, React",
+        "MERN, GPT-3.5 API"
+      ],
+      "answer": "AI Presentation Generator-React, Node.js, MongoDB,Obfuscated Malware Detector-Python, XGBoost,StudyPal-WebRTC, React,AI Code Documentation Assistant-MERN, GPT-3.5 API",
+      "type": "matching",
+      "level": "Advanced",
+      "topic": "Projects"
+    },
+    {
+      "question": "In which company did Divyansh work as a Full Stack Developer?",
+      "options": [
+        "Religare Housing Development Finance Corporation Ltd",
+        "Jaypee Institute",
+        "Graphic Era Hill University",
+        "Vercel"
+      ],
+      "answer": "Religare Housing Development Finance Corporation Ltd",
+      "type": "multiple-choice",
+      "level": "Intermediate",
+      "topic": "Professional Experience"
+    },
+    {
+      "question": "Did Divyansh complete his B.Tech from Jaypee Institute Of Information Technology?",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True",
+      "type": "true-false",
+      "level": "Beginner",
+      "topic": "Education"
+    },
+    {
+      "question": "Match the certificate with the issuing organization",
+      "options": [
+        "Full Stack Web Development",
+        "Digital Marketing Fundamentals",
+        "Data Structures & Algorithms",
+        "BitDegree",
+        "Google",
+        "LetsUpgrade"
+      ],
+      "answer": "Full Stack Web Development-BitDegree,Digital Marketing Fundamentals-Google,Data Structures & Algorithms-LetsUpgrade",
+      "type": "matching",
+      "level": "Intermediate",
+      "topic": "Certifications"
+    }
+  ]
+}
